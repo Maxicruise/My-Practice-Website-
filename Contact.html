@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --background-color:white;
+            --text-color: #333;
+            --card-background: #fff;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-background);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .contact-container h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .contact-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-card {
+            background-color: #f9f9f9;
+            padding: 25px 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            width: 100%;
+            max-width: 200px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card h2 {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                padding: 30px 20px;
+            }
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-card {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h1>Get in Touch</h1>
+    <p>
+        I'm always open to new opportunities and collaborations. Feel free to reach out via email, connect with me on Twitter, or check out my work on GitHub.
+    </p>
+
+    <div class="contact-links">
+        <a href="mailto: odunolatemiloluwa9@gmail.com" class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon" class="icon">
+            <h2>Gmail</h2>
+        </a>
+
+        <a href="https://twitter.com/maxicruiseX" target="_blank" class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter Icon" class="icon">
+            <h2>Twitter</h2>
+        </a>
+
+        <a href="https://github.com/maxicruise" target="_blank" class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Icon" class="icon">
+            <h2>GitHub</h2>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

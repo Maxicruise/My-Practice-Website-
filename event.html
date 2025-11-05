@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ff6a94;
+    color: #333;
+}
+
+
+header {
+    background: grey;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #0779e4;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0779e4;
+    border-bottom: 2px solid #0779e4;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+article h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin-top: 0;
+    color: #666;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Event Hub</h1>
+    <nav>
+        <ul>
+           <li><a href="#upcoming-events">Upcoming Events</a></li>
+           <li><a href="#past-events">Past Events</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+      <section id="upcoming-events">
+          <h2>Upcoming Events</h2>
+            <article>
+                <h3>The Festival of Love💕</h3>
+                <p>A festival where we celebrate love</p>
+            </article>
+            <article>
+                <h3>Festival of Life 🧬</h3>
+                <p>A gathering to celebrate the gift of life</p>
+            </article>
+      </section>
+      
+      <section id="past-events">
+          <h2>Past Events</h2>
+          <article>
+              <h3>Festival of Food</h3>
+              <p>a gathering where we celebrate the availability of food</p>
+              <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="an image from freecodecamp"></img>
+          </article>
+          <article>
+              <h3>Festival of Innovations</h3>
+              <p>A gathering where we celebrate our innovations</p>
+              <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="past event 2"></img>
+          </article>
+          
+      </section>
+  </main>
+</body>
+</html>
